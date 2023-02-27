@@ -5,7 +5,7 @@ import { TYPE } from "./Tab";
 export default class Fade extends AbstractBaseToggleFn{
 	constructor(ele: HTMLElement) {
 		super(ele, TYPE.FADE) //🔥记得 super 一下, 把【参数】传给【父类】
-		this.getMethod(this.setPage) //🚀🚀🚀🚀让【抽象父类】搜集子类的方法, //传参, 参数是个函数
+		this.getMethod(this.setPage) //🚀🚀🚀🚀让【抽象父类】搜集子类的方法, //传参, 参数是个函数  🎃父类会同时执行两个 setPage 方法
 	}
 
 

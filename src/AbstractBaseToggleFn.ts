@@ -60,7 +60,7 @@ export abstract class AbstractBaseToggleFn {
 	// 🔥🔥🔥【观察者模式】通知子类
 	private notify () {
 		this._methodArr.forEach((item: any) => {//👉👉👉 item 就是子类的 setPage 方法
-			item(this._pageElement, this._curIndex) //👉👉👉 传入 【页面】 以及 【当前定位到哪一页】
+			item(this._pageElement, this._curIndex) //👉👉👉 传入 【页面或页面容器】 以及 【当前定位到哪一页】
 		})
 	}
 
